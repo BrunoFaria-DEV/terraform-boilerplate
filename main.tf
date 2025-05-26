@@ -37,6 +37,8 @@ resource "aws_instance" "public_instance" {
   ami = var.ami_type
   instance_type = var.instance_type
   key_name = aws_key_pair.key_pair.key_name
+  
+  vpc_security_group_ids = [aws_security_group.allow_tls_ssh.id]
 
   tags = {
     Name = "public_instance"
