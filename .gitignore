@@ -1,0 +1,40 @@
+# Arquivos de estado do Terraform
+*.tfstate
+*.tfstate.*
+
+# Arquivos de plano do Terraform
+*.tfplan
+
+# Diretórios de backup e cache
+.terraform/
+.terraform.lock.hcl
+
+# Arquivos sensíveis (ex: variáveis definidas com valores)
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Arquivos de log ou debug
+crash.log
+*.log
+
+# Arquivos temporários ou de sistema
+*.bak
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Outros arquivos que possam conter segredos (opcional)
+.env
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# Arquivos de chaves de criptografia
+*.pem
+
+variables.tf
